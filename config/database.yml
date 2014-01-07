@@ -15,16 +15,15 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: river_development
+  database: river_dev
   pool: 5
   username: river
-  password:
+  password: sgP4R
 
-  # Connect on a TCP socket. Omitted by default since the client uses a
-  # domain socket that doesn't need configuration. Windows does not have
-  # domain sockets, so uncomment these lines.
-  #host: localhost
-  #port: 5432
+  # We need to use TCP because we don't assume to have a unix user
+  # with the proper name.
+  host: localhost
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -44,12 +43,16 @@ test:
   database: river_test
   pool: 5
   username: river
-  password:
+  password: sgP4R
+  host: localhost
+  port: 5432
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: river_production
+  database: river_prod
   pool: 5
   username: river
-  password:
+  password: sgP4R
+  host: localhost
+  port: 5432
