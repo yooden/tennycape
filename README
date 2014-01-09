@@ -1,0 +1,5 @@
+Some principles:
+
+- River should remain tool-agnostic. Git works fine, but one day something
+  better will come along. River should not depend on a particular feature
+  of a tool, or worse, on its internals.
