@@ -1,6 +1,3 @@
-$Id: $
-$HeadURL: $
-
 drop table meta;
 create table meta
 (
