@@ -1,3 +1,9 @@
+#   river/db/river-create.sql
+#
+#   DB creation script for River.
+#
+#   This might be short-lived and replaced with some Rails stuff soon.
+
 drop table meta;
 create table meta
 (
