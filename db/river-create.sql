@@ -1,8 +1,8 @@
-#   river/db/river-create.sql
-#
-#   DB creation script for River.
-#
-#   This might be short-lived and replaced with some Rails stuff soon.
+--  river/db/river-create.sql
+--
+--  DB creation script for River.
+--
+--  This might be short-lived and replaced with some Rails stuff soon.
 
 drop table meta;
 create table meta
@@ -10,8 +10,6 @@ create table meta
     key     varchar(255),
     value   varchar(255)
 );
-insert into meta (key, value)
-values ('revision', '$Revision: $');
 
 drop table venue;
 create table venue
@@ -29,13 +27,15 @@ create table artist
     name        varchar(255) not null check (name <> '')
 );
 
-drop table gig
-create table gig
+drop table event
+create table event
 (
     id          serial primary key,
+    name        varchar(255),       --  only used for multiple-artists events
     venue       integer references venue id on delete cascade,
     artist      integer references artist id on delete cascade,
-    date        timestamp with time zone
+    date        timestamp with time zone,
+    reference   varchar(2048)       --  store source for the event
 );
 
 drop table address
@@ -48,3 +48,8 @@ create table address
     zip         varchar(10),
     country     varchar(255)
 );
+
+--  TODOS:
+--  - Festivals with multiple artists: Either 1:n for event.artist or
+--    extension of event containing multiple events.
+--  - Festivals with multiple venues
