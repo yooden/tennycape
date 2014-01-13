@@ -1,0 +1,16 @@
+- The user is free tonight, and want to see what's going in or near his
+  home location. (Default case)
+
+- The user has a free evening in a foreign city and want to see what's
+  going on in or near his location. (Default case for LBS)
+
+- The user plans a visit in a particular region and wants to learn about
+  events in that region at or near a certain date.
+
+- The user has learned of a new artist and wants to add it to his favorites.
+    - The artist already exists in the DB.
+    - The artist is new to the DB
+
+- The user has learned of a new event
+    - The artist already exists in the DB
+    - The artist is new to the DB
