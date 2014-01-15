@@ -35,7 +35,7 @@ create table event
     venue       integer references venue id on delete cascade,
     artist      integer references artist id on delete cascade,
     date        timestamp with time zone,
-    reference   varchar(2048)       --  store source for the event
+    reference   text                --  store source for the event
 );
 
 drop table address
