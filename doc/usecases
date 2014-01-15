@@ -1,16 +1,32 @@
-- The user is free tonight, and want to see what's going in or near his
-  home location. (Default case)
+Use Cases
+---------
 
-- The user has a free evening in a foreign city and want to see what's
-  going on in or near his location. (Default case for LBS)
+1.  The user is free tonight, and want to see what's going in or near his
+    home location. (Default case)
 
-- The user plans a visit in a particular region and wants to learn about
-  events in that region at or near a certain date.
+2. The user has a free evening in a foreign city and want to see what's
+    going on in or near his location. (Default case for LBS)
 
-- The user has learned of a new artist and wants to add it to his favorites.
-    - The artist already exists in the DB.
-    - The artist is new to the DB
+3. The user plans a visit in a particular region and wants to learn about
+    events in that region at or near a certain date.
 
-- The user has learned of a new event
-    - The artist already exists in the DB
-    - The artist is new to the DB
+4. The user has learned of a new artist and wants to add it to his favorites.
+    a) The artist already exists in the DB.
+    b) The artist is new to the DB
+
+5. The user has learned of a new event
+   a) The artist already exists in the DB
+   b) The artist is new to the DB
+
+
+Roles
+-----
+
+1. Consumer - User who mainly uses event data entered by others.
+
+2. Supplier - User who regularly enters artist and even data.
+
+3. Auditor -  Trusted user who has the task to verify artist and event data
+   provided by other users.
+
+4. Admin - Tasked with assigning roles.
