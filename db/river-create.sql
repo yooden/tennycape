@@ -4,12 +4,30 @@
 --
 --  This might be short-lived and replaced with some Rails stuff soon.
 
-drop table meta;
-create table meta
+drop table role
+create table role
 (
-    key     varchar(255),
-    value   varchar(255)
+    id          serial primary key,
+    name        varchar(255)
 );
+--  TODO at the moment we only have user->auditor->admin, so maybe we can
+--  simplify things to a single field in table user.
+
+drop table user;
+create table user
+(
+    id          serial primary key,
+    name        varchar(255),
+    password    varchar(255)
+);
+
+drop table user_role
+create table user_role
+(
+    user        integer references user id on delete cascade,
+    role        integer references role id on delete cascade
+);
+--  TODO add unique contraint
 
 drop table venue;
 create table venue
