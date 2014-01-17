@@ -1,0 +1,4 @@
+Normal Ruby conventions apply, with the following exceptions:
+
+- /.../ is preferred over %r{...}
+- "..." is preferred over %w{...}
