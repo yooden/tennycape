@@ -71,3 +71,4 @@ create table address
 --  - Festivals with multiple artists: Either 1:n for event.artist or
 --    extension of event containing multiple events.
 --  - Festivals with multiple venues
+--  - Artist images. Probably the best to just get them from Wikimedia.
