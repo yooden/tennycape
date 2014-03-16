@@ -1,4 +1,7 @@
 Tennycape::Application.routes.draw do
+  resources :venues
+
+
   resources :artists
 
 
