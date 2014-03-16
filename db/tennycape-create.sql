@@ -1,6 +1,6 @@
---  river/db/river-create.sql
+--  river/db/tennycape-create.sql
 --
---  DB creation script for River.
+--  DB creation script for Tennycape.
 --
 --  This might be short-lived and replaced with some Rails stuff soon.
 

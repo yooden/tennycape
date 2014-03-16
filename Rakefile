@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-River::Application.load_tasks
+Tennycape::Application.load_tasks

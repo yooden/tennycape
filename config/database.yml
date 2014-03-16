@@ -15,10 +15,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: river_dev
+  database: tennycape_dev
   pool: 5
-  username: river
-  password: sgP4R
+  username: tennycape
+  password: sgP4T
 
   # We need to use TCP because we don't assume to have a unix user
   # with the proper name.
@@ -40,19 +40,19 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: river_test
+  database: tennycape_test
   pool: 5
-  username: river
-  password: sgP4R
+  username: tennycape
+  password: sgP4T
   host: localhost
   port: 5432
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: river_prod
+  database: tennycape_prod
   pool: 5
-  username: river
-  password: sgP4R
+  username: tennycape
+  password: sgP4T
   host: localhost
   port: 5432

@@ -1,4 +1,4 @@
-#   River test data
+#   Tennycape test data
 
 insert into address (coordinates, street, city, zip, country)
 values ('TODO', 'Mülheimer Straße 127', 'Köln', '51063', 'Deutschland');

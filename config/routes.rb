@@ -1,4 +1,4 @@
-River::Application.routes.draw do
+Tennycape::Application.routes.draw do
   resources :artists
 
 
