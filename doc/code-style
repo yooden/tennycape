@@ -1,4 +1,5 @@
 Normal Ruby conventions apply, with the following exceptions:
 
+- Do not use tab characters to indent.
 - /.../ is preferred over %r{...}
 - "..." is preferred over %w{...}
