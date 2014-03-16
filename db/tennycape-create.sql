@@ -1,4 +1,4 @@
---  river/db/tennycape-create.sql
+--  tennycape/db/tennycape-create.sql
 --
 --  DB creation script for Tennycape.
 --
