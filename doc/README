@@ -1,9 +1,10 @@
 Some principles:
 
-- River should remain tool-agnostic. Git works fine, but one day something
-  better will come along. River should not depend on a particular feature
-  of a tool, or worse, on its internals.
+- Tennycape should remain tool-agnostic. Git works fine, but one day
+  something better will come along. Tennycape should not depend on a
+  particular feature of Git or another tool, or worse, on its internals.
 
-- River should be black-start-capable. That means that in the case of a
-  catastrophic failure we should be able to re-create River (including its
-  database) on a new machine in a quick and  straightforward way.
+- Tennycape should be black-start-capable. That means that in the case of a
+  catastrophic server failure we should be able to re-create Tennycape
+  (including its database) on a new machine in a quick and straightforward
+  way.
