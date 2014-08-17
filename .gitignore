@@ -13,3 +13,9 @@
 
 #   ignore NEdit extended backups
 *.~??~
+
+#   Documentation cache and generated files:
+/doc/api/
+
+#   Ruby
+/tmp/
