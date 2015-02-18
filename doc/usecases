@@ -15,8 +15,12 @@ Use Cases
     b) The artist is new to the DB
 
 5. The user has learned of a new event
-   a) The artist already exists in the DB
-   b) The artist is new to the DB
+    a) The artist already exists in the DB
+        - The event already exists in the DB
+        - The event is new to the DB
+    b) The artist is new to the DB
+        - The event already exists in the DB
+        - The event is new to the DB
 
 
 Roles
